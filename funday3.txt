@@ -1,0 +1,85 @@
+Animation Mode: ON [OFF-ON]
+
+Area: 10000 [1,000-10,000]
+Initial Female#: 100 [1-100]
+Initial Male#: 100 [1-100]
+
+Life Length: 90 [40-100]
+Childhood Length: 25 [10-30]
+Adulthood Length: 40 [20-50]
+Old-hood Length: 25 [10-30]
+
+Total Childhood Reproduction Rate: 0
+Childhood Reproduction1: 0 0
+Childhood Reproduction 2: 0 1
+Childhood Reproduction 3: 0 2
+Childhood Reproduction 4: 0 3
+[Prerequisite 1: R1+R2+ …+RN=1]
+[Prerequisite 2: Total= R1 * num1 + R2 * num2 + …+RN*numN]
+
+Total Adulthood Reproduction Rate: 0
+Adulthood Reproduction1: 0 2
+Adulthood Reproduction 2: 0 3
+Adulthood Reproduction 3: 1 0
+[Prerequisite 1: R1+R2+ …+RN=1]
+[Prerequisite 2: Total= R1 * num1 + R2 * num2 + …+RN*numN]
+
+Total Oldhood Reproduction Rate: 0
+Oldhood Reproduction1: 0 1
+Oldhood Reproduction 2: 0 0
+[Prerequisite 1: R1+R2+ …+RN=1]
+[Prerequisite 2: Total= R1 * num1 + R2 * num2 + …+RN*numN]
+
+Childhood Death Rate: 0
+Adulthood Death Rate: 0
+Oldhood Death Rate: 0
+
+Fatal Disaster Possibility: 0
+Fatal Disaster minimum every: 40
+Fatal Disaster maximum every: 50
+Fatal Disaster Children Death Rate: 0.20
+Fatal Disaster Adults Death Rate: 0.10
+Fatal Disaster Elderly Death Rate: 0.20
+
+Mild Disaster Possibility: 0
+Mild Disaster minimum every: 5
+Mild Disaster maximum every: 10
+Mild Disaster Children Death Rate: 0.05
+Mild Disaster Adult Death Rate: 0.0
+Mild Disaster Elderly Death Rate: 0.10
+
+Day Working Children: 0.8
+Day Working Adults: 0.5
+Day Working Elderly: 0.1
+Night Working Children: 0.0
+Night Working Adults: 0.2
+Night Working Elderly: 0.05
+
+Prerequisite 1: DayWorkingChildren+NightWorkingChildren <= 1
+Prerequisite 2: DayWorkingAdults+NightWorkingAdults <= 1
+Prerequisite 3: DayWorkingEldelry+NightWorkingElderly <= 1
+
+Non Workers at Home: 0.3
+Non Workers at Play: 0.35
+Non Workers at Somewhere Else: 0.35
+
+Prerequisite: nonWorkersAtHome+ nonWorkersAtPlay+ nonWorkersAtSWE=1
+
+Playing After Working: 0.4 
+Somewhere else after Playing: 0.5 
+Somewhere else after Working: 0.3
+Playing after Somewhere else: 0.5
+
+Night Time: 8 hours
+Day Time: 16 hours
+Some of these should add up to 24
+
+Working Time: 8 hours
+SWE Time: 4 hours
+Playing: 4 hours
+
+Night duration: 8 seconds [4-16]
+Day duration: 16 seconds [8-32]
+
+Starting Year: 1900
+Ending Year:  2900
